@@ -8,6 +8,9 @@ import { ProductComponent } from './product/product.component';
 import { PopupComponent } from './popup/popup.component';
 import { CompanyComponent } from './company/company.component';
 import { AddproductComponent } from './addproduct/addproduct.component';
+import { MaterialModule } from 'src/MaterialModule';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,11 @@ import { AddproductComponent } from './addproduct/addproduct.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
